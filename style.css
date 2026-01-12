@@ -222,6 +222,53 @@ footer {
     cursor: grab;
 }
 
+@media (max-width: 768px) {
+    .main-menu {
+        margin: -28px 12px 32px;
+        max-width: 95%;
+        border-radius: 20px;
+    }
+
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 14px;
+        padding: 14px;
+    }
+
+    .main-menu li {
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 12px;
+        white-space: nowrap;
+    }
+}
+
+
 .galeri-wrapper:active {
     cursor: grabbing;
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        margin: -28px 12px 32px;
+        max-width: 95%;
+        border-radius: 20px;
+    }
+
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 14px;
+        padding: 14px;
+    }
+
+    .main-menu li {
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 12px;
+        white-space: nowrap;
+    }
 }
