@@ -8,18 +8,24 @@ function showPage(id) {
 
 const galeri = document.querySelector('.galeri-wrapper');
 
+const track = document.querySelector('.galeri-track');
+track.innerHTML += track.innerHTML;
+
 let autoScroll;
 let isHover = false;
 
 function startAutoScroll() {
-    autoScroll = setInterval(() => {
-        if (!isHover) {
-            galeri.scrollLeft += 1;
-            if (galeri.scrollLeft + galeri.clientWidth >= galeri.scrollWidth) {
-                galeri.scrollLeft = 0;
-            }
+autoScroll = setInterval(() => {
+if (!isHover) {
+galeri.scrollLeft += 1;
+
+        if (galeri.scrollLeft >= track.scrollWidth / 2) {
+            galeri.scrollLeft = 0;
         }
-    }, 20);
+    }
+}, 20);
+
+
 }
 
 galeri.addEventListener('mouseenter', () => {
@@ -39,3 +45,4 @@ galeri.addEventListener('touchend', () => {
 });
 
 startAutoScroll();
+
