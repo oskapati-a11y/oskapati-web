@@ -20,11 +20,10 @@ if (!isHover) {
 galeri.scrollLeft += 1;
 
         if (galeri.scrollLeft >= track.scrollWidth / 2) {
-            galeri.scrollLeft = 0;
+            galeri.scrollLeft = track.scrollWidth / 2;
         }
     }
 }, 20);
-
 
 }
 
@@ -45,4 +44,3 @@ galeri.addEventListener('touchend', () => {
 });
 
 startAutoScroll();
-
